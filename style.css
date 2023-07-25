@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #333;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+main{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: 8rem;
+  background: #f1f1f1;
+  color: #eee;
+  background: linear-gradient(90deg , rgba(120, 112, 112, 0.846)0%,rgba(120, 112, 112, 0.846) 100%);  border-radius: 1em;
+  padding: 1.2rem 2rem 1.8rem;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: .7rem;
+  letter-spacing: 10px;
+}
+.control{
+  display: flex;
+  justify-content: center;
+}
+
+#entry{
+  outline: none;
+  border: 1px solid #eee;
+  background: #222;
+  color: #eee;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1rem;
+  padding: 0.6rem 0.9rem;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+#entry::placeholder{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+ 
+}
+#del,#up{
+    outline: none;
+  border: 1px solid #eee;
+  background: #222;
+  color: #eee;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1rem;
+  padding: 10px 10px;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.8s;
+}
+#del:hover,
+#up:hover{
+  background-color: #eee;
+  color: #222;
+  font-weight: 800;
+}
+.btn{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+.submit-btn,.cancel-btn{
+  outline: none;
+  border: 1px solid #eee;
+  background-color: #222;
+  color: #eee;
+  font-size: .9rem;
+  padding:10px 20px;
+  flex: 0 0 .5rem;
+  cursor: pointer;
+ transition: 0.8s;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+.submit-btn:hover,
+.cancel-btn:hover{
+  background-color: #eee;
+  color: #222;
+}
+
+/* todo list*/
+.list-container{
+  margin-top: 2rem;
+}
+
+.list-item{
+  border-bottom:1px solid #eee;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .9rem .5rem .4rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+.text{
+  width: 80%;
+
+}
